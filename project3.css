@@ -1,0 +1,140 @@
+
+html,body{
+    margin:0;
+    max-width:100%;
+    overflow-X: hidden;
+}
+.total{
+    background-image: url(clock.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 900px;
+    width:100vw;    
+    overflow-x:hidden ;
+}
+.daba{
+    height: calc(100vh - 82px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.493); 
+}
+h1{
+    color:#fff;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:20px;
+    letter-spacing: 5px;
+    border-bottom:1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.486);
+    box-shadow:0 0 20px #fff;
+}
+.parent{
+    height:200px;
+    width:270px; 
+    /* margin:140px auto 0; */
+}
+.crono{
+    width:fit-content;
+    display:flex;
+    background-color: #00bcd4;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px #044e58 ;
+    color:#fff;
+    font-size:30px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+span{
+    margin:0 10px;
+    font-weight:bold;
+}
+.btn{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+}
+button{
+font-size:18px;
+border:none;
+margin-top:40px;
+padding:10px 20px;
+color:#fff;
+border-radius:10px;
+
+}
+button:hover{
+    opacity:.8;
+    cursor: pointer;
+}
+button:active{
+    transform:translateY(-4px)
+}
+#star{
+    background-color:rgb(4, 235, 4);
+    box-shadow:0 0 10px rgb(27, 92, 27) ;
+
+}
+#stop{
+    background-color: #f44336;
+    box-shadow:0 0 10px #693733 ;
+
+}
+.loop{
+    animation: myloop .5s infinite;
+}
+@keyframes myloop{
+    0%,100%{
+        opacity:1
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity:1;
+    }
+    75%{
+        opacity:.5;
+    }
+
+}
+#star:disabled,#restar:disabled,#stop:disabled{
+    opacity: .4;
+    cursor: not-allowed;
+}
+/* .disabled:hover{
+    opacity: .4;
+    cursor: not-allowed;  
+} */
+#mill{
+    font-size:22px;
+    position:relative;
+    top:8px;
+}
+.restarname{
+    background-color: #f5e23df0;
+        box-shadow:0 0 10px #808080 ;
+
+}
+.parnot{
+    border:4px solid;
+    width:fit-content;
+    position: relative;
+}
+.not{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    margin:0;
+}
+button{
+    z-index:20;
+}
+.index{
+    z-index:-1;
+
+}
